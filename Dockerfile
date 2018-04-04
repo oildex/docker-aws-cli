@@ -6,3 +6,5 @@ RUN pip install awscli==$AWSCLI_VERSION
 RUN apk add --no-cache --virtual .run-deps \
       groff \
       less
+
+CMD ["/usr/local/bin/aws", "--version"]
