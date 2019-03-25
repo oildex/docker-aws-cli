@@ -1,6 +1,6 @@
 FROM python:3.7.2-alpine3.9
 
-ENV AWSCLI_VERSION=1.15.80
+ENV AWSCLI_VERSION=1.16.131
 
 RUN pip install awscli==$AWSCLI_VERSION
 RUN apk add --no-cache --virtual .run-deps \
